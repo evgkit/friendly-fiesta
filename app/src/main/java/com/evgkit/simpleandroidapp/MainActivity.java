@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, getMessage());
+                intent.putExtra(Intent.EXTRA_SUBJECT, getMessage());
+                intent.putExtra(Intent.EXTRA_EMAIL, "bring_it@list.ru");
                 startActivity(intent);
             }
         });
