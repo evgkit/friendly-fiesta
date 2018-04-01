@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, getMessage());
                 intent.putExtra(Intent.EXTRA_SUBJECT, getMessage());
-                intent.putExtra(Intent.EXTRA_EMAIL, "bring_it@list.ru");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"bring_it@list.ru"});
                 startActivity(intent);
             }
         });
