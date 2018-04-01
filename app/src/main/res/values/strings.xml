@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SimpleAndroidApp</string>
+    <string name="show_activity">Show Activity</string>
+    <string name="send_button_text">Share</string>
+    <string name="input_message_hint">Type your message here …</string>
+    <string name="key_message">message</string>
+    <string name="hello_text">Hello from Android App</string>
 </resources>
