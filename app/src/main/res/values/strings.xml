@@ -5,4 +5,5 @@
     <string name="input_message_hint">Type your message here …</string>
     <string name="key_message">message</string>
     <string name="hello_text">Hello from Android App</string>
+    <string name="cats_button_text">Cats</string>
 </resources>
