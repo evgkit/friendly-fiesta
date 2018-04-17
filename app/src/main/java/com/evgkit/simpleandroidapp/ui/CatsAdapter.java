@@ -16,8 +16,24 @@ import java.util.List;
 public class CatsAdapter extends RecyclerView.Adapter<CatsAdapter.CatHolder> {
     private final List<Cat> cats;
 
-    public CatsAdapter(List<Cat> cats) {
+    @NonNull
+    private final OnItemClickListener onItemClickListener;
+
+    @NonNull
+    private final View.OnClickListener internalClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Cat cat = (Cat) v.getTag();
+            if (null != cat) {
+                int position = cats.indexOf(cat);
+                onItemClickListener.onItemClick(cat, position);
+            }
+        }
+    };
+
+    public CatsAdapter(List<Cat> cats, @NonNull OnItemClickListener onItemClickListener) {
         this.cats = cats;
+        this.onItemClickListener = onItemClickListener;
     }
 
     @NonNull
@@ -30,6 +46,8 @@ public class CatsAdapter extends RecyclerView.Adapter<CatsAdapter.CatHolder> {
     @Override
     public void onBindViewHolder(@NonNull CatHolder holder, int position) {
         Cat cat = cats.get(position);
+        holder.catImage.setOnClickListener(internalClickListener);
+        holder.catImage.setTag(cat);
         Picasso.get().load(cat.getUrl()).into(holder.catImage);
     }
 
