@@ -6,4 +6,8 @@
     <string name="input_message_hint">Введи сообщение здесь …</string>
     <string name="cats_button_text">Котики</string>
     <string name="layout_test">Вёрстка</string>
+    <string name="magic_images"><![CDATA[<---- magic images :)]]></string>
+    <string name="text_like_button">Text Like Button</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim add</string>
+    <string name="my_super_title">My Super Title</string>
 </resources>
