@@ -6,4 +6,5 @@
     <string name="key_message">message</string>
     <string name="hello_text">Hello from Android App</string>
     <string name="cats_button_text">Cats</string>
+    <string name="layout_test">Layout Test</string>
 </resources>

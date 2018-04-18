@@ -7,6 +7,16 @@
     tools:context="com.evgkit.simpleandroidapp.ui.MainActivity">
 
     <Button
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/layout_test"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/buttonCats"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

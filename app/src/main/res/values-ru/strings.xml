@@ -5,4 +5,5 @@
     <string name="send_button_text">Расшарить</string>
     <string name="input_message_hint">Введи сообщение здесь …</string>
     <string name="cats_button_text">Котики</string>
+    <string name="layout_test">Вёрстка</string>
 </resources>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.evgkit.simpleandroidapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AnotherActivity"></activity>
-        <activity android:name=".ui.CatsActivity"></activity>
+        <activity android:name=".ui.AnotherActivity" />
+        <activity android:name=".ui.CatsActivity" />
+        <activity android:name=".ui.LayoutTestActivity"></activity>
     </application>
 
 </manifest>

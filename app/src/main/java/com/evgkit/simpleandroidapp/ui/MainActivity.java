@@ -13,6 +13,7 @@ import com.evgkit.simpleandroidapp.R;
 public class MainActivity extends AppCompatActivity {
 
     private EditText inputMessage;
+    private Button layoutTestBtn;
     private Button catsBtn;
     private Button showActivityBtn;
     private Button sendEmailBtn;
@@ -23,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         inputMessage = findViewById(R.id.inputMessage);
+
+        layoutTestBtn = findViewById(R.id.buttonLayout);
+        layoutTestBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LayoutTestActivity.class);
+                startActivity(intent);
+            }
+        });
 
         catsBtn = findViewById(R.id.buttonCats);
         catsBtn.setOnClickListener(new View.OnClickListener() {
