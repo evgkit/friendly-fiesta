@@ -13,4 +13,7 @@
     <string name="threads">Threads</string>
     <string name="button_text_asynctask_activity">Asynctask Activity</string>
     <string name="button_text_threads_activity">Threads Activity</string>
+    <string name="create">Create</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
 </resources>
