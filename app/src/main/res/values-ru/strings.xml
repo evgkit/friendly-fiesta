@@ -10,4 +10,7 @@
     <string name="text_like_button">Text Like Button</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim add</string>
     <string name="my_super_title">My Super Title</string>
+    <string name="threads">Threads</string>
+    <string name="button_text_asynctask_activity">Asynctask Activity</string>
+    <string name="button_text_threads_activity">Threads Activity</string>
 </resources>

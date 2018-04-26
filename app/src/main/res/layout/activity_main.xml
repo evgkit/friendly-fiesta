@@ -10,7 +10,6 @@
         android:id="@+id/buttonLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/layout_test"
         app:layout_constraintBottom_toTopOf="@+id/buttonCats"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +19,6 @@
         android:id="@+id/buttonCats"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/cats_button_text"
         app:layout_constraintBottom_toTopOf="@+id/buttonActivity"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +28,6 @@
         android:id="@+id/buttonActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/show_activity"
         app:layout_constraintBottom_toTopOf="@+id/buttonEmail"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +37,6 @@
         android:id="@+id/buttonEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/send_button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +51,17 @@
         android:ems="10"
         android:hint="@string/input_message_hint"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/buttonActivity"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExerciseThreads"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonExerciseThreads"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/threads"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
