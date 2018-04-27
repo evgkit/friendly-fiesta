@@ -21,9 +21,9 @@
         <activity android:name=".ui.AnotherActivity" />
         <activity android:name=".ui.CatsActivity" />
         <activity android:name=".ui.LayoutTestActivity" />
-        <activity android:name=".ui.ThreadsExerciseActivity" />
-        <activity android:name=".ui.AsyncTaskActivity" />
-        <activity android:name=".ui.ThreadsActivity"></activity>
+        <activity android:name=".ui.threads.ThreadsExerciseActivity" />
+        <activity android:name=".ui.threads.primitiveAsyncTask.AsyncTaskActivity" />
+        <activity android:name=".ui.threads.threadsAsyncTask.ThreadsActivity" />
     </application>
 
 </manifest>

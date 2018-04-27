@@ -1,14 +1,16 @@
-package com.evgkit.simpleandroidapp.ui;
+package com.evgkit.simpleandroidapp.ui.threads.primitiveAsyncTask;
 
 import android.os.AsyncTask;
 import android.os.SystemClock;
 
-public class CounterAsyncTask extends AsyncTask<Integer, Integer, Integer> {
+import com.evgkit.simpleandroidapp.ui.threads.Events;
 
-    private final AsyncTaskEvents asyncTaskEvents;
+public class PrimitiveAsyncTask extends AsyncTask<Integer, Integer, Integer> {
 
-    public CounterAsyncTask(AsyncTaskEvents asyncTaskEvents) {
-        this.asyncTaskEvents = asyncTaskEvents;
+    private final Events events;
+
+    public PrimitiveAsyncTask(Events events) {
+        this.events = events;
     }
 
     @Override
@@ -28,40 +30,40 @@ public class CounterAsyncTask extends AsyncTask<Integer, Integer, Integer> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        if (asyncTaskEvents != null) {
-            asyncTaskEvents.onPreExecute();
+        if (events != null) {
+            events.onPreExecute();
         }
     }
 
     @Override
     protected void onPostExecute(Integer integer) {
         super.onPostExecute(integer);
-        if (asyncTaskEvents != null) {
-            asyncTaskEvents.onPostExecute();
+        if (events != null) {
+            events.onPostExecute();
         }
     }
 
     @Override
     protected void onProgressUpdate(Integer... values) {
         super.onProgressUpdate(values);
-        if (asyncTaskEvents != null) {
-            asyncTaskEvents.onProgressUpdate(values[0]);
+        if (events != null) {
+            events.onProgressUpdate(values[0]);
         }
     }
 
     @Override
     protected void onCancelled(Integer aInteger) {
         super.onCancelled(aInteger);
-        if (asyncTaskEvents != null) {
-            asyncTaskEvents.onCancel();
+        if (events != null) {
+            events.onCancel();
         }
     }
 
     @Override
     protected void onCancelled() {
         super.onCancelled();
-        if (asyncTaskEvents != null) {
-            asyncTaskEvents.onCancel();
+        if (events != null) {
+            events.onCancel();
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui;
+package com.evgkit.simpleandroidapp.ui.threads;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.evgkit.simpleandroidapp.R;
+import com.evgkit.simpleandroidapp.ui.threads.primitiveAsyncTask.AsyncTaskActivity;
+import com.evgkit.simpleandroidapp.ui.threads.threadsAsyncTask.ThreadsActivity;
 
 public class ThreadsExerciseActivity extends AppCompatActivity {
 

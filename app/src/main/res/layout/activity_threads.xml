@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.evgkit.simpleandroidapp.ui.ThreadsActivity">
+    tools:context=".ui.threads.threadsAsyncTask.ThreadsActivity">
 
     <Button
         android:id="@+id/buttonThreadsCreate"
@@ -49,7 +49,7 @@
         android:id="@+id/textViewThreads"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@android:color/holo_purple"
         android:gravity="center_vertical|center_horizontal"
         android:textAlignment="gravity"
         android:textColor="@android:color/background_dark"

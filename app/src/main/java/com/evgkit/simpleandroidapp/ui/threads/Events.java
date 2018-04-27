@@ -1,6 +1,6 @@
-package com.evgkit.simpleandroidapp.ui;
+package com.evgkit.simpleandroidapp.ui.threads;
 
-public interface AsyncTaskEvents {
+public interface Events {
     void onPreExecute();
 
     void onPostExecute();
