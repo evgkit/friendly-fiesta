@@ -8,9 +8,11 @@
 
     <Button
         android:id="@+id/buttonAsyncCreate"
-        android:layout_width="134dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/create"
         app:layout_constraintBottom_toTopOf="@+id/guidelineAsync"
@@ -21,9 +23,11 @@
 
     <Button
         android:id="@+id/buttonAsyncStart"
-        android:layout_width="117dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/start"
         app:layout_constraintBottom_toTopOf="@+id/textViewAsync"
@@ -34,9 +38,11 @@
 
     <Button
         android:id="@+id/buttonAsyncCancel"
-        android:layout_width="133dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/cancel"
         app:layout_constraintBottom_toTopOf="@+id/guidelineAsync"
