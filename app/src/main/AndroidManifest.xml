@@ -24,6 +24,7 @@
         <activity android:name=".ui.threads.ThreadsExerciseActivity" />
         <activity android:name=".ui.threads.primitiveAsyncTask.AsyncTaskActivity" />
         <activity android:name=".ui.threads.threadsAsyncTask.ThreadsActivity" />
+        <activity android:name=".ui.NetworkActivity"></activity>
     </application>
 
 </manifest>
