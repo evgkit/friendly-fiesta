@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui.threads.threadsAsyncTask;
+package com.evgkit.simpleandroidapp.threads.primitiveAsyncTask;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,42 +8,41 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.ui.threads.Events;
+import com.evgkit.simpleandroidapp.threads.Events;
 
-public class ThreadsActivity extends AppCompatActivity implements Events {
+public class AsyncTaskActivity extends AppCompatActivity implements Events {
 
     private Button createBtn;
     private Button startBtn;
     private Button cancelBtn;
     private TextView textView;
 
-    private ThreadsAsyncTask threadsAsyncTask;
+    private PrimitiveAsyncTask primitiveAsyncTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_threads);
-
+        setContentView(R.layout.activity_async_task);
         Toast.makeText(this, this.getLocalClassName(), Toast.LENGTH_SHORT).show();
 
-        createBtn = findViewById(R.id.buttonThreadsCreate);
-        startBtn = findViewById(R.id.buttonThreadsStart);
-        cancelBtn = findViewById(R.id.buttonThreadsCancel);
-        textView = findViewById(R.id.textViewThreads);
+        createBtn = findViewById(R.id.buttonAsyncCreate);
+        startBtn = findViewById(R.id.buttonAsyncStart);
+        cancelBtn = findViewById(R.id.buttonAsyncCancel);
+        textView = findViewById(R.id.textViewAsync);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.buttonThreadsCreate:
+                    case R.id.buttonAsyncCreate:
                         doAsyncTaskCreate();
                         break;
 
-                    case R.id.buttonThreadsStart:
+                    case R.id.buttonAsyncStart:
                         doAsyncTaskStart();
                         break;
 
-                    case R.id.buttonThreadsCancel:
+                    case R.id.buttonAsyncCancel:
                         doAsyncTaskCancel();
                         break;
                 }
@@ -56,20 +55,20 @@ public class ThreadsActivity extends AppCompatActivity implements Events {
 
     private void doAsyncTaskCreate() {
         Toast.makeText(this, "AsyncTask created", Toast.LENGTH_SHORT).show();
-        threadsAsyncTask = new ThreadsAsyncTaskImpl(this);
+        primitiveAsyncTask = new PrimitiveAsyncTask(this);
     }
 
     private void doAsyncTaskStart() {
-        if ((threadsAsyncTask == null) || (threadsAsyncTask.isCancelled())) {
+        if ((primitiveAsyncTask == null) || (primitiveAsyncTask.isCancelled())) {
             Toast.makeText(this, "You should Create AsyncTask", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "AsyncTask started", Toast.LENGTH_SHORT).show();
-            threadsAsyncTask.execute();
+            primitiveAsyncTask.execute(1, 10);
         }
     }
 
     private void doAsyncTaskCancel() {
-        threadsAsyncTask.cancel();
+        primitiveAsyncTask.cancel(true);
     }
 
     @Override
@@ -95,9 +94,9 @@ public class ThreadsActivity extends AppCompatActivity implements Events {
 
     @Override
     protected void onDestroy() {
-        if (threadsAsyncTask != null) {
-            threadsAsyncTask.cancel();
-            threadsAsyncTask = null;
+        if (primitiveAsyncTask != null) {
+            primitiveAsyncTask.cancel(false);
+            primitiveAsyncTask = null;
         }
         super.onDestroy();
     }

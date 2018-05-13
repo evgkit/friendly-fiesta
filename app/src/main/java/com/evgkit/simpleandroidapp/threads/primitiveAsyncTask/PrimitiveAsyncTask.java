@@ -1,9 +1,9 @@
-package com.evgkit.simpleandroidapp.ui.threads.primitiveAsyncTask;
+package com.evgkit.simpleandroidapp.threads.primitiveAsyncTask;
 
 import android.os.AsyncTask;
 import android.os.SystemClock;
 
-import com.evgkit.simpleandroidapp.ui.threads.Events;
+import com.evgkit.simpleandroidapp.threads.Events;
 
 public class PrimitiveAsyncTask extends AsyncTask<Integer, Integer, Integer> {
 

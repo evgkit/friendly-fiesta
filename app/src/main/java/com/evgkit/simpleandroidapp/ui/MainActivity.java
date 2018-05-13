@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.ui.threads.ThreadsExerciseActivity;
+import com.evgkit.simpleandroidapp.threads.ThreadsExerciseActivity;
 
 public class MainActivity extends AppCompatActivity {
 

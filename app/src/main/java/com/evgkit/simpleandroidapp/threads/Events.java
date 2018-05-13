@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui.threads;
+package com.evgkit.simpleandroidapp.threads;
 
 public interface Events {
     void onPreExecute();

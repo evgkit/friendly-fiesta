@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui.threads.threadsAsyncTask;
+package com.evgkit.simpleandroidapp.threads.threadsAsyncTask;
 
 
 import android.os.Handler;
