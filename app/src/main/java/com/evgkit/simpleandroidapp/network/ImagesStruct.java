@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.model;
+package com.evgkit.simpleandroidapp.network;
 
 
 import com.google.gson.annotations.SerializedName;

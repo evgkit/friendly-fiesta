@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui;
+package com.evgkit.simpleandroidapp.network;
 
 
 import android.support.annotation.NonNull;
@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.model.Gif;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

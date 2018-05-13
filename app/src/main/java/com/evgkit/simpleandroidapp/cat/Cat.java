@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.model;
+package com.evgkit.simpleandroidapp.cat;
 
 import android.support.annotation.NonNull;
 

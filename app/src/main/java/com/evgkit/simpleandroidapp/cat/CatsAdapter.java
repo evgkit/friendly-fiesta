@@ -1,4 +1,4 @@
-package com.evgkit.simpleandroidapp.ui;
+package com.evgkit.simpleandroidapp.cat;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.model.Cat;
+import com.evgkit.simpleandroidapp.ui.OnItemClickListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

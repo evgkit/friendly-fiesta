@@ -3,7 +3,6 @@ package com.evgkit.simpleandroidapp.network;
 
 import android.support.annotation.Nullable;
 
-import com.evgkit.simpleandroidapp.model.Envelope;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;

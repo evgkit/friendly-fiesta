@@ -1,6 +1,4 @@
-package com.evgkit.simpleandroidapp.service;
-
-import com.evgkit.simpleandroidapp.model.Cat;
+package com.evgkit.simpleandroidapp.cat;
 
 import java.util.ArrayList;
 import java.util.List;

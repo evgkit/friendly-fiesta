@@ -1,8 +1,6 @@
 package com.evgkit.simpleandroidapp.network;
 
 
-import com.evgkit.simpleandroidapp.model.Gif;
-
 import java.util.List;
 
 import retrofit2.Call;

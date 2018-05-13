@@ -13,8 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.model.Gif;
+import com.evgkit.simpleandroidapp.network.Gif;
 import com.evgkit.simpleandroidapp.network.App;
+import com.evgkit.simpleandroidapp.network.ImageAdapter;
 
 import java.util.List;
 

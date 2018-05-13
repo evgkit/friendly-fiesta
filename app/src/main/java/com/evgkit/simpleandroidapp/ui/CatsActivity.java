@@ -10,8 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.evgkit.simpleandroidapp.R;
-import com.evgkit.simpleandroidapp.model.Cat;
-import com.evgkit.simpleandroidapp.service.CatService;
+import com.evgkit.simpleandroidapp.cat.Cat;
+import com.evgkit.simpleandroidapp.cat.CatService;
+import com.evgkit.simpleandroidapp.cat.CatsAdapter;
 
 public class CatsActivity extends AppCompatActivity {
     @Nullable
